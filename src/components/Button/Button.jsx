@@ -4,7 +4,11 @@ import s from '../App/App.module.css';
 
 function Button({ label, onClick = () => null, type = 'button' }) {
   return (
-    <button className={(s.button, s.contactBtn)} type={type} onClick={onClick}>
+    <button
+      className={`${s.button} ${s.contactBtn}`}
+      type={type}
+      onClick={onClick}
+    >
       {label}
     </button>
   );
